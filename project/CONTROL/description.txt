@@ -1,0 +1,11 @@
+The qBittorrent project aims to provide an open-source software alternative to µTorrent.
+Additionally, qBittorrent runs and provides the same features on all major platforms (FreeBSD, Linux, macOS, OS/2, Windows).
+qBittorrent is based on the Qt toolkit and libtorrent-rasterbar library.
+
+Default username and password for WebUI: admin/adminadmin
+
+Notes:
+1. The "\downloads" folder of qBittorrent binds to "\volume1\Download\qBittorrent" shared folder in NAS, please find files in that folder.
+2. It's recommended to sign in ADM with HTTPS connection, and then open qBittorrent from ADM desktop icon.
+3. Please reload qBittorrent webUI if sign in ADM with HTTP connection and encounter HTTP error 401.
+4. The docker version is maintained by LinuxServer.io.

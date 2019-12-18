@@ -1,0 +1,51 @@
+{
+  "general":{
+    "package":"qbittorrent-vpn-docker",
+    "name":"qBittorrent VPN",
+    "version":"4.2.1",
+    "depends":[
+      "docker-ce(>=18.03.1.r1)"
+    ],
+    "conflicts":[],
+    "developer":"qBittorrent project + OpenVPN Server",
+    "maintainer":"LinuxServer.io",
+    "email":"stansgc.ast@gmail.com",
+    "website":"https://github.com/linuxserver/docker-qbittorrent",
+    "architecture":"x86-64",
+    "firmware":"3.1.0"
+  },
+  "adm-desktop": {
+    "app": {
+      "port": 18181,
+      "protocol": "http",
+      "type": "custom",
+      "url": "/"
+    },
+    "privilege": {
+      "accessible": "administrators",
+      "customizable": true
+    }
+
+  },
+  "register":{
+    "share-folder":[
+      {
+        "name":"Docker",
+        "description":"Data and files directory for Docker Apps"
+      },
+      {
+        "name":"Download",
+        "description":"Download default shared folder"
+      }
+    ],
+    "boot-priority":{
+      "start-order":70,
+      "stop-order":30
+    },
+    "prerequisites":{
+      "enable-service":[],
+      "restart-service":[]
+    },
+    "port":[18181]
+  }
+}
